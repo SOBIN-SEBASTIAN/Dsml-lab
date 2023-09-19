@@ -1,0 +1,13 @@
+import numpy as np
+matrix_A = np.array([[1, 2, 3],[4, 5, 6],[7, 8, 9]])
+matrix_B = np.array([[9, 8, 7],[6, 5, 4],[3, 2, 1]])
+print("Matrix A:")
+print(matrix_A)
+print("\n Matrix A:")
+print(matrix_B)
+print("\n element-wise Matrix  Addition")
+print(matrix_A+matrix_B)
+print("\n element-wise Matrix  Multiplication")
+print(matrix_A*matrix_B)
+print("\n Matrix   Dot product")
+print(np.dot(matrix_A,matrix_B))
