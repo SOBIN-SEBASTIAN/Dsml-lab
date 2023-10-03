@@ -1,0 +1,15 @@
+import pandas as pd
+dr = pd.read_csv('Student.csv')
+df = pd.DataFrame(dr,index=None)
+
+filterdf =df.query('Age>=22')
+print(filterdf)
+print("Average e GPA of the students " ,df['GPA'].mean())
+df = df.sort_values(by=['GPA'],ascending=[False])
+print(" top 5 students with the highest GPAs")
+print(df.head(5))
+df=dr.groupby(['Age'],as_index=False).GPA.mean()
+print("Average GPA for each age group.")
+print(df)
+df = pd.DataFrame(dr,index=)
+print(df)
